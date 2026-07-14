@@ -99,14 +99,12 @@ document.querySelectorAll('.section-card').forEach((card, i) => {
     });
 });
 function checkPassword() {
-    const pass = document.getElementById('vault-pass').value;
-    const msg = document.getElementById('error-msg');
-    
-    if (pass.toLowerCase() === 'dae4' || pass === 'burton2008') {  // Change this
-        document.getElementById('bank-login').style.display = 'none';
-        alert("✅ Vault Unlocked. Welcome, Mr. Burton.");
+    const pass = document.getElementById("vault-pass").value;
+
+    if (pass === "dae4" || pass === "burton2008") {
+        document.getElementById("secret-content").style.display = "block";
     } else {
-        msg.textContent = "ACCESS DENIED. Try again, nigga.";
+        document.getElementById("error-msg").textContent = "Wrong password.";
     }
 }
 
