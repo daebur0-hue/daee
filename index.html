@@ -8,118 +8,195 @@
 </head>
 <body>
     <div class="stars"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
     
     <header class="hero">
         <div class="hero-content">
-            <h1 class="glitch" data-text="Da'Var Burton">Da'Var Burton</h1>
-            <p class="subtitle">Creative Developer & Designer</p>
+            <div class="name-wrapper">
+                <h1 class="glitch">Da'Var Burton</h1>
+            </div>
+            <p class="subtitle">Creative Developer</p>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
         </div>
     </header>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#socials">Socials</a></li>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#socials" class="nav-link">Socials</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#favorites" class="nav-link">Favorites</a></li>
         </ul>
     </nav>
 
     <main>
-        <!-- Socials Section -->
-        <section id="socials" class="section-card fade-in">
-            <h2>🔗 Connect With Me</h2>
-            <div class="social-links">
-                <a href="https://instagram.com/YOURINSTA" target="_blank" class="social-btn instagram">Instagram</a>
-                <a href="https://discord.com/users/YOURID" target="_blank" class="social-btn discord">Discord</a>
-                <a href="https://twitter.com/YOURTWITTER" target="_blank" class="social-btn twitter">Twitter / X</a>
-                <a href="https://twitch.tv/YOURTWITCH" target="_blank" class="social-btn twitch">Twitch</a>
-                <a href="https://my.playstation.com/profile/YOURPSN" target="_blank" class="social-btn playstation">PlayStation</a>
+        <!-- About Section -->
+        <section id="about" class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-accent"></div>
             </div>
-        </section>
-
-        <!-- Bio Section -->
-        <section id="bio" class="section-card fade-in">
-            <h2>📋 About Me</h2>
             <div class="bio-content">
-                <p><strong>Full Name:</strong> Da'Var Dominique Burton</p>
-                <p><strong>Born:</strong> June 26, 2008 at Richmond Community Hospital ED, 1500 28th St.</p>
-                <p><strong>Lived in:</strong> Multiple places - Mosby Court, Creighton Court, South Gate Townhouses, Bundy Ave, N 29th St, N Nansemond St, Kenway Dr, now Newbridge</p>
+                <p><span class="highlight">Da'Var Dominique Burton</span> • Born June 26, 2008</p>
+                <p class="bio-text">Richmond Community Hospital ED, 1500 28th St.</p>
+                <p class="bio-text">Lived in: Mosby Court, Creighton Court, South Gate Townhouses, Bundy Ave, N 29th St, N Nansemond St, Kenway Dr, now Newbridge</p>
             </div>
         </section>
 
-        <!-- Physical Info -->
-        <section class="section-card fade-in">
-            <h2>👤 Physical Traits</h2>
+        <!-- Physical Traits -->
+        <section class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>Physical Profile</h2>
+                <div class="header-accent"></div>
+            </div>
             <div class="traits-grid">
-                <div class="trait"><span>Eyes:</span> Brown</div>
-                <div class="trait"><span>Hair:</span> Twist</div>
-                <div class="trait"><span>Skin:</span> Brown</div>
-                <div class="trait"><span>Height:</span> 5'9"</div>
-                <div class="trait"><span>Weight:</span> 170 lbs</div>
-                <div class="trait"><span>Shoe Size:</span> 9 1/2</div>
+                <div class="trait-card">
+                    <div class="trait-icon">👁️</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Eyes</span>
+                        <span class="trait-value">Brown</span>
+                    </div>
+                </div>
+                <div class="trait-card">
+                    <div class="trait-icon">💈</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Hair</span>
+                        <span class="trait-value">Twist</span>
+                    </div>
+                </div>
+                <div class="trait-card">
+                    <div class="trait-icon">🌞</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Skin</span>
+                        <span class="trait-value">Brown</span>
+                    </div>
+                </div>
+                <div class="trait-card">
+                    <div class="trait-icon">📏</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Height</span>
+                        <span class="trait-value">5'9"</span>
+                    </div>
+                </div>
+                <div class="trait-card">
+                    <div class="trait-icon">⚖️</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Weight</span>
+                        <span class="trait-value">170 lbs</span>
+                    </div>
+                </div>
+                <div class="trait-card">
+                    <div class="trait-icon">👟</div>
+                    <div class="trait-info">
+                        <span class="trait-label">Shoe Size</span>
+                        <span class="trait-value">9 1/2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Socials Section -->
+        <section id="socials" class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>Connect</h2>
+                <div class="header-accent"></div>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/YOURINSTA" target="_blank" class="social-card instagram">
+                    <span class="social-icon">📷</span>
+                    <span class="social-name">Instagram</span>
+                </a>
+                <a href="https://discord.com/users/YOURID" target="_blank" class="social-card discord">
+                    <span class="social-icon">💬</span>
+                    <span class="social-name">Discord</span>
+                </a>
+                <a href="https://twitter.com/YOURTWITTER" target="_blank" class="social-card twitter">
+                    <span class="social-icon">𝕏</span>
+                    <span class="social-name">Twitter</span>
+                </a>
+                <a href="https://twitch.tv/YOURTWITCH" target="_blank" class="social-card twitch">
+                    <span class="social-icon">🎮</span>
+                    <span class="social-name">Twitch</span>
+                </a>
+                <a href="https://my.playstation.com/profile/YOURPSN" target="_blank" class="social-card playstation">
+                    <span class="social-icon">🎯</span>
+                    <span class="social-name">PlayStation</span>
+                </a>
             </div>
         </section>
 
         <!-- Favorites Section -->
-        <section id="favorites" class="section-card fade-in">
-            <h2>✨ My Favorites</h2>
+        <section id="favorites" class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>Favorites</h2>
+                <div class="header-accent"></div>
+            </div>
             <div class="favorites-grid">
-                <div class="fav-item">
-                    <h3>🎨 Color</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">🎨</div>
+                    <h3>Color</h3>
                     <p>Green</p>
                 </div>
-                <div class="fav-item">
-                    <h3>🎵 Artist</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">🎵</div>
+                    <h3>Artist</h3>
                     <p>Unknown</p>
                 </div>
-                <div class="fav-item">
-                    <h3>🔢 Number</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">🔢</div>
+                    <h3>Number</h3>
                     <p>4</p>
                 </div>
-                <div class="fav-item">
-                    <h3>🎬 Movie</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">🎬</div>
+                    <h3>Movie</h3>
                     <p>My Girl</p>
                 </div>
-                <div class="fav-item">
-                    <h3>📺 Show</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">📺</div>
+                    <h3>Show</h3>
                     <p>The 100</p>
                 </div>
-                <div class="fav-item">
-                    <h3>📱 Anime</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">⚡</div>
+                    <h3>Anime</h3>
                     <p>Naruto / Black Clover</p>
                 </div>
-                <div class="fav-item">
-                    <h3>👟 Shoes</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">👟</div>
+                    <h3>Shoes</h3>
                     <p>Jordan 4s</p>
                 </div>
-                <div class="fav-item">
-                    <h3>🍟 Snack</h3>
+                <div class="fav-card">
+                    <div class="fav-icon">🍟</div>
+                    <h3>Snack</h3>
                     <p>Hot Fries</p>
-                </div>
-                <div class="fav-item">
-                    <h3>👕 Brand</h3>
-                    <p>Nike / Under Armour</p>
                 </div>
             </div>
         </section>
 
-        <!-- Personal Insights -->
-        <section class="section-card fade-in">
-            <h2>💬 Personal Insights</h2>
-            <div class="insights">
-                <div class="insight-box loves">
+        <!-- Personality Section -->
+        <section class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>Personality</h2>
+                <div class="header-accent"></div>
+            </div>
+            <div class="personality-grid">
+                <div class="personality-box loves">
                     <h3>❤️ Loves</h3>
                     <p>Female toes, stomachs, thighs, areolas, and cookies 😏</p>
                 </div>
-                <div class="insight-box hates">
+                <div class="personality-box hates">
                     <h3>😤 Hates</h3>
                     <p>Condiments, raisins, new food, wanna-be main characters</p>
                 </div>
-                <div class="insight-box best">
+                <div class="personality-box best">
                     <h3>🏆 Best Time</h3>
                     <p>8th grade year</p>
                 </div>
-                <div class="insight-box worst">
+                <div class="personality-box worst">
                     <h3>⚠️ Worst</h3>
                     <p>Harming a female out of emotion</p>
                 </div>
@@ -127,16 +204,21 @@
         </section>
 
         <!-- Finance Section -->
-        <section class="section-card fade-in">
-            <h2>💰 Current Status</h2>
-            <div class="finance">
-                <h3>Net Worth: ~$14k</h3>
+        <section class="section-card glass-effect fade-in">
+            <div class="section-header">
+                <h2>Net Worth</h2>
+                <div class="header-accent"></div>
+            </div>
+            <div class="finance-display">
+                <div class="amount">$14k</div>
+                <p class="amount-label">Current Portfolio</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Da'Var Burton • Website • Update them links 🔗</p>
+        <p>Da'Var Burton © 2026</p>
+        <p class="footer-update">Update social links 🔗</p>
     </footer>
 
     <script src="script.js"></script>
