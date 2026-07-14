@@ -98,3 +98,17 @@ document.querySelectorAll('.section-card').forEach((card, i) => {
         delay: i * 0.1
     });
 });
+function checkPassword() {
+    const pass = document.getElementById('vault-pass').value;
+    const msg = document.getElementById('error-msg');
+    
+    if (pass.toLowerCase() === 'dae4' || pass === 'burton2008') {  // Change this
+        document.getElementById('bank-login').style.display = 'none';
+        alert("✅ Vault Unlocked. Welcome, Mr. Burton.");
+    } else {
+        msg.textContent = "ACCESS DENIED. Try again, nigga.";
+    }
+}
+
+// Auto focus
+setTimeout(() => document.getElementById('vault-pass').focus(), 500);
