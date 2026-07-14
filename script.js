@@ -66,3 +66,12 @@ const observer = new IntersectionObserver(entries => {
 });
 
 sections.forEach(section => observer.observe(section));
+// Touch-friendly scroll
+document.documentElement.style.scrollBehavior = 'smooth';
+
+// Disable hover on touch devices
+if ('ontouchstart' in window) {
+    document.querySelectorAll('.section-card').forEach(card => {
+        card.style.transition = 'transform 0.3s';
+    });
+}
