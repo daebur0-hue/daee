@@ -529,3 +529,55 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* iPhone & Mobile God Mode */
+@media (max-width: 480px) {
+    .hero {
+        height: 100vh;
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2.8em; /* Big but not breakin' */
+        letter-spacing: 1px;
+    }
+    
+    .navbar ul {
+        gap: 1rem;
+        flex-direction: row; /* Keep horizontal but tight */
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* iOS smooth */
+    }
+    
+    .section-card {
+        margin: 20px 10px;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+    
+    .traits-grid, .favorites-grid, .social-links {
+        grid-template-columns: 1fr; /* Stack everything */
+        gap: 12px;
+    }
+    
+    .social-card {
+        padding: 18px;
+        font-size: 1.1em;
+    }
+}
+
+/* Prevent iOS zoom on inputs if you add any later */
+input, textarea, select {
+    font-size: 16px; /* Stops auto-zoom */
+}
+
+/* Better touch targets */
+a, button, .social-card {
+    min-height: 44px; /* Apple friendly */
+}
+
+/* Fix backdrop blur on iOS */
+.glass-effect {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
