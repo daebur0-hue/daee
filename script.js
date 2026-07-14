@@ -44,7 +44,7 @@ sections.forEach((section, index) => {
 });
 
 // Interactive hover effects
-document.querySelectorAll('.fav-item').forEach(item => {
+document.querySelectorAll('.fav-card').forEach(item => {
     item.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.05) rotate(2deg)';
     });
