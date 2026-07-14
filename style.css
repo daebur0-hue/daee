@@ -581,3 +581,27 @@ a, button, .social-card {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
+/* Epic additions */
+.glass-effect {
+    backdrop-filter: blur(20px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.section-card:hover {
+    transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 0 60px rgba(0, 212, 255, 0.4);
+}
+
+/* Mouse follower orb */
+.cursor-glow {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: all 0.1s ease;
+    opacity: 0.6;
+}
