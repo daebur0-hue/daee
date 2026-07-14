@@ -75,3 +75,26 @@ if ('ontouchstart' in window) {
         card.style.transition = 'transform 0.3s';
     });
 }
+// Mouse glow orb
+const glow = document.createElement('div');
+glow.className = 'cursor-glow';
+document.body.appendChild(glow);
+
+document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
+
+// GSAP example (add <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> in head)
+gsap.from(".glitch", {duration: 1.5, y: 100, opacity: 0, ease: "bounce.out"});
+
+// Scroll trigger magic for cards
+document.querySelectorAll('.section-card').forEach((card, i) => {
+    gsap.from(card, {
+        scrollTrigger: card,
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        delay: i * 0.1
+    });
+});
