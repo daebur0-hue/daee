@@ -98,4 +98,15 @@ document.querySelectorAll('.section-card').forEach((card, i) => {
         delay: i * 0.1
     });
 });
-
+const knowledge = {
+  "what's your name": "Da'Var Burton",
+  "who are you": "Da'Var Burton",
+  "when were you born": "2008",
+  "how old are you": "Born in 2008.",
+  "how many kids do you have": "0",
+  "how many bodies do you have": "0",
+  "how many siblings do you have": "11",
+  "how much money do you have": "$15,432",
+  "are you gay": "No.",
+  "who are you": "A smart, kind, loving person who values trust."
+};
