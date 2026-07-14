@@ -101,7 +101,7 @@ document.querySelectorAll('.section-card').forEach((card, i) => {
 function checkPassword() {
     const pass = document.getElementById("vault-pass").value;
 
-    if (pass === "dae4" || pass === "burton2008") {
+    if (pass === "dae4" || pass === "dae4") {
         document.getElementById("secret-content").style.display = "block";
     } else {
         document.getElementById("error-msg").textContent = "Wrong password.";
