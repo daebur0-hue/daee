@@ -55,3 +55,14 @@ document.querySelectorAll('.fav-card').forEach(item => {
 });
 
 console.log('🎨 Welcome to Da\'Var Burton\'s Portfolio!');
+const sections = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+        }
+    });
+});
+
+sections.forEach(section => observer.observe(section));
